@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading動畫</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    .container{
+      width: 200px;
+      height: 100px;
+      margin: 100px auto;
+    }
+    .bar{
+      width: 90px;
+      height: 10px;
+      border-radius: 50px;
+      margin: 10px auto;
+    }
+    p{
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 1px;
+      animation: show 1s infinite alternate;
+    }
+    .bar:nth-child(1){
+      background-color: #ff005d;
+      animation: right 0.5s infinite ease-in-out alternate;
+    }
+    .bar:nth-child(2){
+      background-color: #29820e;
+      animation: left 0.5s infinite ease-in-out alternate;
+    }
+    .bar:nth-child(3){
+      background-color: #5c6ce1;
+      animation: right 0.8s infinite ease-in-out alternate;
+    }
+    .bar:nth-child(4){
+      background-color: #f24d11;
+      animation: left 0.8s infinite ease-in-out alternate;
+    }
+    .bar:nth-child(5){
+      background-color: #a30aa3;
+      animation: right 0.5s infinite ease-in-out alternate;
+    }
+    .bar:nth-child(6){
+      background-color: #ffd900;
+      animation: left 0.5s infinite ease-in-out alternate;
+    }
+    @keyframes right {
+      from{
+        transform: translateX(-15px);
+      }
+      to{
+        transform: translateX(15px);
+      }
+    }
+    @keyframes left {
+      from{
+        transform: translateX(15px);
+      }
+      to{
+        transform: translateX(-15px);
+      }
+    }
+    @keyframes show {
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <p>Loading...</p>
+  </div>
+  <img src="img/circle.svg" alt="">
+</body>
+</html>

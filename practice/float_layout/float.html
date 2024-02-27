@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float排版</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    ol{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    h2{
+      margin: 20px auto;
+      text-align: center;
+    }
+    .item{
+      background-color: pink;
+      padding: 10px;
+      width: 32%;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+      float: left;
+    }
+    .container{
+      max-width: 1200px;
+      width: 80%;
+      margin: auto;
+    }
+    #Products{
+      background-color: bisque;
+      padding: 50px;
+      overflow: hidden;
+    }
+    .pic{
+      width: 100%;
+      max-width: 100%;
+    }
+    .pic-frame{
+      height: 242px;
+      width: 100%;
+      overflow: hidden;
+    }
+    h3{
+      margin: 20px auto;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    footer{
+      background-color: black;
+      padding: 20px;
+    }
+    footer p{
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="logo"><img src="img/logo.png" alt="Backery"></div>
+    <nav>
+      <ol>
+        <li><a href="">最新消息</a></li>
+        <li><a href="">產品介紹</a></li>
+        <li><a href="">聯絡我們</a></li>
+      </ol>
+    </nav>
+  </header>
+  <section id="News">
+    <h2>最新消息</h2>
+    <ol class="news-list">
+      <li>
+        <div class="date">2024-01-22</div>
+        <div class="title">年終大特賣，買一送一</div>
+      </li>
+      <li>
+        <div class="date">2023-12-25</div>
+        <div class="title">聖誕禮盒，送禮最佳選擇</div>
+      </li>
+      <li>
+        <div class="date">2023-11-21</div>
+        <div class="title">店休公告</div>
+      </li>
+    </ol>
+  </section>
+  <section id="Products">
+    <h2>產品介紹</h2>
+    <div class="container">
+      <div class="item">
+        <div class="pic-frame">
+          <img src="img/cake.jpg" alt="" class="pic">
+        </div>
+        <h3>蛋糕</h3>
+      </div>
+      <div class="item">
+        <img src="img/bread.jpg" alt="" class="pic">
+        <h3>麵包</h3>
+      </div>
+      <div class="item">
+        <img src="img/dessert.jpg" alt="" class="pic">
+        <h3>甜點</h3>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &copy; 2023</p>
+  </footer>
+</body>
+</html>
